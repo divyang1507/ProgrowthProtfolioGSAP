@@ -1,0 +1,54 @@
+*{
+    list-style: none;
+    /* color: black; */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins'
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: black; */
+    position: fixed;
+    width: 100%;
+    padding: 16px 0 16px 0;
+    color: black;
+}
+a{
+    color: black;
+}
+
+.navmenu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.homepage{
+    height: 100vh;
+    background: rgba(255, 0, 0, 0.151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homepage h1{
+    font-size: 80px;
+}
+.homepage h2{
+    font-size: 40px;
+}
+.homepage p{
+    text-align: center;
+    font-size: 24px;
+    /* font-weight: 700; */
+    width: 60%;
+}
+.aboutpage{
+    height: 100vh;
+    background: rgba(255, 255, 0, 0.244);
+}
