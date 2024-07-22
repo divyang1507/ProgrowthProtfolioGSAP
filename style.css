@@ -1,6 +1,5 @@
 *{
     list-style: none;
-    /* color: black; */
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -11,25 +10,38 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background: black; */
     position: fixed;
     width: 100%;
     padding: 16px 0 16px 0;
-    color: black;
+    z-index: 111;
+}
+.spline{
+    position: absolute;
+    z-index: -111;
 }
 a{
-    color: black;
+    
 }
-
+.logo, .navmenu{
+    margin: 0 24px 0 24px;
+}
 .navmenu{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 48px;
+}
+.link{
+    font-weight: bold;
+    color: black;
 }
 
+.h1container {
+    display: flex;
+    overflow: hidden;
+}
 .homepage{
     height: 100vh;
-    background: rgba(255, 0, 0, 0.151);
+    background: rgba(0, 0, 0, 0.185);
     display: flex;
     justify-content: center;
     align-items: center;
