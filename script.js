@@ -106,19 +106,19 @@ tl2
     // delay: 0.5,
   });
 
-tl2.play();
+// tl2.play();
 
-ScrollTrigger.create({
-  // animation: tl2,
-  trigger: ".textcontainer",
-  start: "top 40",
-  end: "bottom bottom",
-  scrub: true,
-  delay: 2,
-  onEnter: () => tl2.reverse(),
-  onLeaveBack: () => tl2.play(),
-  // markers: true,
-});
+// ScrollTrigger.create({
+//   // animation: tl2,
+//   trigger: ".textcontainer",
+//   start: "top 40",
+//   end: "bottom bottom",
+//   scrub: true,
+//   delay: 2,
+//   onEnter: () => tl2.reverse(),
+//   onLeaveBack: () => tl2.play(),
+//   // markers: true,
+// });
 
 
 ScrollTrigger.addEventListener("refresh", () => scroll.update());
