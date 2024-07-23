@@ -13,7 +13,10 @@ html, body{
 #main{
     position: relative;
 }
-
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
 #circle{
     border-radius: 100px;
     background: #000;
@@ -63,17 +66,18 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1
+    z-index:1;
+    position: relative;
 }
 
 .homepage h1{
-    font-size: 80px;
+    font-size: 6vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .homepage h2{
-    font-size: 40px;
+    font-size: 4vw
     /* overflow: hidden; */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
 }
 .homepage p{
     text-align: center;
@@ -83,6 +87,12 @@ a{
     /* font-weight: 700; */
     width: 80%;
 }
+
+.herofooter{
+    position: absolute;
+    bottom: 0;
+}
+
 .aboutpage{
     height: 100vh;
     background: rgba(255, 255, 0, 0.244);

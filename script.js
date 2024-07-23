@@ -117,8 +117,9 @@ ScrollTrigger.create({
   delay: 2,
   onEnter: () => tl2.reverse(),
   onLeaveBack: () => tl2.play(),
-  markers: true,
+  // markers: true,
 });
+
 
 ScrollTrigger.addEventListener("refresh", () => scroll.update());
 ScrollTrigger.refresh();
