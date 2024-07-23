@@ -10,8 +10,10 @@
       rel="stylesheet"
     />
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js"></script>
+  
   </head>
   <body>
+    <div id="circle"></div>
     <nav>
       <h1 class="logo">
         <a href="" class="">ProGrowth</a>
@@ -23,38 +25,51 @@
         <a href="" class="link">Contact</a>
       </div>
     </nav>
+  <div class="" data-scroll-container id="main">
 
-    <section id="home" class="homepage">
-      <spline-viewer class="spline" url="https://prod.spline.design/FdEWm0er4A76qUWv/scene.splinecode"></spline-viewer>
-      <div class="h1container">
-        <h1>Design.</h1>
-        <h1>Develop.</h1>
-        <h1>Deliver.</h1>      
+
+    <!-- <spline-viewer class="spline" url="https://prod.spline.design/FdEWm0er4A76qUWv/scene.splinecode"></spline-viewer> -->
+    <section id="home"  class="homepage">
+      <div class="textcontainer"  >
+        <h1 class="splittype" >Design.
+       Develop.
+      Deliver.</h1>      
       </div>
-      <h2>Welcome to ProGrowth</h2>
-      <p>
-        We craft intuitive and engaging interfaces with precision and
-        creativity. Let's build something exceptional together.
-      </p>
+      <div class="textcontainer" >
+      <h2 class="splittype" >Welcome to ProGrowth</h2>
+    </div>
+    <div class="textcontainer" >
+    <p class="splittype">
+      We craft intuitive and engaging interfaces with precision and creativity. Let's build something exceptional together.
+    </p>
+  </div>
     </section>
-    <section id="about" class="aboutpage"></section>
+    <section id="about" class="aboutpage">
+
+      <div>About</div>
+    </section>
+  </div>
 
 
+
+  <script src="https://unpkg.com/split-type"></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+  integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 
  
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+   
     <script src="script.js"></script>
   </body>
 </html>

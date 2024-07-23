@@ -6,6 +6,23 @@
     font-family: 'Poppins'
 }
 
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    position: relative;
+}
+
+#circle{
+    border-radius: 100px;
+    background: #000;
+    position: absolute;
+    z-index: 11111;
+    width: 10px;
+    height: 10px;
+    transition: all cubic-bezier(0.19,1,0.22,1) 1s;
+}
 nav{
     display: flex;
     align-items: center;
@@ -35,7 +52,7 @@ a{
     color: black;
 }
 
-.h1container {
+.textcontainer {
     display: flex;
     overflow: hidden;
 }
@@ -46,21 +63,28 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1
 }
 
 .homepage h1{
     font-size: 80px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .homepage h2{
     font-size: 40px;
+    /* overflow: hidden; */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .homepage p{
     text-align: center;
     font-size: 24px;
+    margin:  auto;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     /* font-weight: 700; */
-    width: 60%;
+    width: 80%;
 }
 .aboutpage{
     height: 100vh;
     background: rgba(255, 255, 0, 0.244);
+    z-index: 3;
 }
